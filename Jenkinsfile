@@ -16,7 +16,7 @@ pipeline {
 			}} 
 		stage('slack-notification') {
 			steps{
-				 slackSend baseUrl: 'https://hooks.slack.com/services', 'slackSend channel: \'devops\', color: \'good\', teamDomain: \'student\', tokenCredentialId: \'slacktest\'/', channel: 'devops', color: 'good', teamDomain: 'student', tokenCredentialId: 'slacktest'  
+				 slackSend baseUrl: 'slackSend channel: \'devops\', color: \'good\', teamDomain: \'student\', tokenCredentialId: \'slacktest\'/', channel: 'devops', color: 'good', teamDomain: 'student', tokenCredentialId: 'slacktest'  
 			}}
  
 
