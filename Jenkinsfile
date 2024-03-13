@@ -12,7 +12,7 @@ pipeline {
 	                 }}
 		stage('Deployment'){
 		   steps {
-		sh 'cp target/myntra.war /home/avinash/Downloads/tar2-file/apache-tomcat-9.0.85/webapps'
+		sh 'cp target/myntra.war /home/virat/appfile/apache-tomcat-9.0.85/webapps'
 			}} 
 		stage('slack-notification') {
 			steps{
